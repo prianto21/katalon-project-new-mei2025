@@ -26,9 +26,14 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class BaseHelpers {
-	
+
 	public classWebBaseObject() {
-		
+	}
+
+	public TestObject createObjectByCustom(String objName,String cusProperty,String xpath) {
+		TestObject testObj = new TestObject(objName)
+		testObj.addProperty(cusProperty, ConditionType.EQUALS, xpath)
+		return testObj
 	}
 	
 	public TestObject createObjectByXpath(String objName,String xpath) {
@@ -36,20 +41,20 @@ public class BaseHelpers {
 		testObj.addProperty("xpath", ConditionType.EQUALS, xpath)
 		return testObj
 	}
-	
-	
+
+
 	public TestObject createObjectById(String objName,String id) {
 		TestObject testObject = new TestObject(objName)
 		testObject.addProperty("id",ConditionType.EQUALS,id)
 		return testObject
 	}
-	
+
 	public TestObject createObjectByClass(TestObject objName,String clases) {
 		TestObject testObj = new TestObject(objName)
 		testObj.addProperty("class",ConditionType.EQUALS,clases)
 		return testObj
 	}
-	
+
 	public String parseAddedDayOfMonth(int addedDay, String pattern) {
 		Calendar calendar = Calendar.getInstance()
 
@@ -63,15 +68,14 @@ public class BaseHelpers {
 
 		return formattedDate
 	}
-	
+
 	public String parseAddedDayOfMonthNew(int addedDay, String pattern) {
 		LocalDate today = LocalDate.now()
-		
+
 		LocalDate futureDate = today.plusDays(addedDay)
-		
+
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern)
-		
+
 		return futureDate.format(formatter)
 	}
-	
 }

@@ -22,7 +22,7 @@ import internal.GlobalVariable
 import mainpackage.BaseHelpers
 
 public class LoginScreen extends BaseHelpers{
-	
+
 	private TestObject btnMakeAppointment
 	private TestObject lblDemoUsername
 	private TestObject lblDemoPassword
@@ -37,27 +37,27 @@ public class LoginScreen extends BaseHelpers{
 		txtPassword = createObjectByXpath(txtPassword, "//input[@id='txt-password']")
 		btnLogin = createObjectByXpath(btnLogin, "//button[@id='btn-login']")
 	}
-	
+
 	public void tapAppointment() {
 		WebUI.click(btnMakeAppointment)
 	}
-	
+
 	public String getUsername() {
 		WebUI.getAttribute(lblDemoUsername, "value")
 	}
-	
+
 	public String getPassword() {
 		WebUI.getAttribute(lblDemoPassword, "value")
 	}
-	
+
 	public void setUsername(String username) {
 		WebUI.setText(txtUsername, username)
 	}
-	
+
 	public void setPassword(String password) {
 		WebUI.setText(txtPassword, password)
 	}
-	
+
 	public void tapLogin() {
 		WebUI.click(btnLogin)
 	}
