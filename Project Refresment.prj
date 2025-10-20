@@ -4,8 +4,12 @@
    <name>Project Refresment</name>
    <tag></tag>
    <UUID>a3bf13f8-6764-4bf2-a2e5-5d1faad1c10f</UUID>
+   <freeLicense>true</freeLicense>
    <migratedVersion>5.9.0</migratedVersion>
+   <modifiedEdition>FREE</modifiedEdition>
+   <modifiedVersion>10.0.1</modifiedVersion>
    <pageLoadTimeout>0</pageLoadTimeout>
+   <projectFileLocation>/Users/rantop/Documents/katalon-project-new-mei2025/Project Refresment.prj</projectFileLocation>
    <sourceContent>
       <sourceFolderList>
          <sourceFolderConfiguration>

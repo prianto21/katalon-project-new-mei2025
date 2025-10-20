@@ -26,7 +26,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 
 import internal.GlobalVariable
-import io.appium.java_client.MobileElement
+//import io.appium.java_client.MobileElement
 
 public class ShopScreen extends BaseHelpers{
 	
