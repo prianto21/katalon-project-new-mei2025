@@ -93,7 +93,6 @@ public class AppoimentScreen extends BaseHelpers{
 
 	public String setComment(String comment) {
 		KeywordUtil.logInfo(comment)
-		//		WebUI.waitForElementPresent(lblComment,4)
 		WebUI.delay(1)
 		WebUI.click(lblComment)
 		WebUI.sendKeys(lblComment, comment)
@@ -106,5 +105,7 @@ public class AppoimentScreen extends BaseHelpers{
 	public void logOut() {
 		WebUI.click(iconCollapse)
 		WebUI.click(lblLogout)
+		//test commit
+		
 	}
 }
