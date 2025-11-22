@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Make_Appointment</name>
+   <name>DemoLogin</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a91bdd0a-8e23-4484-b859-9a16feb93fce</testCaseGuid>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>3eddee0e-09b7-4295-8ead-e9bb5e1adfad</testCaseGuid>
 </TestCaseEntity>

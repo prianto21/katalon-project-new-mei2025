@@ -1,4 +1,4 @@
-package mainpackage
+package com.packages.helpers
 
 import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
@@ -35,7 +35,7 @@ public class BaseHelpers {
 		testObj.addProperty(cusProperty, ConditionType.EQUALS, xpath)
 		return testObj
 	}
-	
+
 	public TestObject createObjectByXpath(String objName,String xpath) {
 		TestObject testObj = new TestObject(objName)
 		testObj.addProperty("xpath", ConditionType.EQUALS, xpath)

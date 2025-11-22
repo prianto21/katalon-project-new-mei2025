@@ -1,10 +1,10 @@
 {
-  "keywordFileContentHash": "CCC31EF903224D2AF8A7EAA9C75F9899",
+  "keywordFileContentHash": "A9967DBD6FF921EFA572269AF72CC058",
   "keywordClasses": [
     {
       "name": "com.katalondemocura.AppoimentScreen",
       "keywordMethods": []
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

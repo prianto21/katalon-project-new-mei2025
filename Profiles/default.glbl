@@ -4,4 +4,14 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>[:]</initValue>
+      <name>TEST_DATA</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'./Data Files/'</initValue>
+      <name>TEST_DATA_LOCATION</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>input_Appointment</name>
+   <name>Make_Appointment</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c67b186e-2723-4458-904d-633010fcdc39</testCaseGuid>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>a91bdd0a-8e23-4484-b859-9a16feb93fce</testCaseGuid>
 </TestCaseEntity>

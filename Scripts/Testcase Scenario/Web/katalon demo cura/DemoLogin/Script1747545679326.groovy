@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser("https://katalon-demo-cura.herokuapp.com/")
 WebUI.maximizeWindow()
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/katalon demo cura/Do_Login"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/katalon demo cura/Make_Appointment"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/katalon demo cura/Do_Logout"), null)
+WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Login"), null)
+WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Make_Appointment"), null)
+WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Logout"), null)
 WebUI.closeBrowser()
