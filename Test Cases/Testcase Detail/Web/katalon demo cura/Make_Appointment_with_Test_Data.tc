@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Make_Appointment_with_Test_Data</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>0e2c89d6-839f-4ebf-8bc5-4070be3734ef</testCaseGuid>
+</TestCaseEntity>

@@ -4,6 +4,7 @@
    <name>TC001_TestOpenWeb</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b3a86cff-c0a7-4266-a311-5eec6b449e0d</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>

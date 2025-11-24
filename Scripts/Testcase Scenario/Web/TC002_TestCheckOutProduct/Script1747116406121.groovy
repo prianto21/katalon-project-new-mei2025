@@ -14,16 +14,39 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.packages.helpers.WebHelpers
-
 import internal.GlobalVariable
-import mainpackage.BaseHelpers
+import mainpackage.HomePage
+import mainpackage.ShopScreen
 
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser("https://katalon-demo-cura.herokuapp.com/")
-WebUI.maximizeWindow()
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Login"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Make_Appointment"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Logout"), null)
+HomePage homepage = new HomePage()
+ShopScreen shop = new ShopScreen()
+// Buka browser dan navigasi ke halaman login
+WebUI.openBrowser('')
+WebUI.navigateToUrl('https://www.saucedemo.com/')
+
+
+
+	'Step 1 : verify landing'
+	homepage.verifyLanding()
+	
+	'Step 2 : input username'
+	homepage.inputUserName("standard_user")
+	
+	'Step 3 : input password'
+	homepage.inputPassword("secret_sauce")
+	
+	'Step 4 : tap btn login'
+	homepage.tapBtnLogin()
+	
+	'Step 5 : verify landing'
+	shop.verifyLanding()
+	
+//	shop.selectProduct("Sauce Labs Backpack")
+	'Step 6 : tap add product'
+//	shop.tapAddToProduct()
+
+//	WebUI.waitForPageLoad(10)
+// Tutup browser
 WebUI.closeBrowser()

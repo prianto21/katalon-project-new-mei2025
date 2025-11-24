@@ -4,5 +4,6 @@
    <name>TC002_TestCheckOutProduct</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>45d6d592-66a8-4f38-9410-c3c5652a94dd</testCaseGuid>
 </TestCaseEntity>

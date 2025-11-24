@@ -17,13 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.packages.helpers.WebHelpers
 
 import internal.GlobalVariable
-import mainpackage.BaseHelpers
 
 import org.openqa.selenium.Keys as Keys
 
+Map dataRow = WebHelpers.getBoScenarioTestData("Homescreen", GlobalVariable.TEST_DATA_LOCATION + '/' + "Homescreen_TestData.xlsx", "Login_P_001_DemoLogin_With_Test_Data")
 WebUI.openBrowser("https://katalon-demo-cura.herokuapp.com/")
 WebUI.maximizeWindow()
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Login"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Make_Appointment"), null)
-WebUI.callTestCase(findTestCase("Test Cases/Testcase Detail/Web/katalon demo cura/Do_Logout"), null)
+WebUI.callTestCase(findTestCase('Test Cases/Testcase Detail/Web/katalon demo cura/Do_Login'), dataRow)
+WebUI.callTestCase(findTestCase('Test Cases/Testcase Detail/Web/katalon demo cura/Make_Appointment_with_Test_Data'), dataRow)
+WebUI.callTestCase(findTestCase('Test Cases/Testcase Detail/Web/katalon demo cura/Do_Logout'), dataRow)
 WebUI.closeBrowser()

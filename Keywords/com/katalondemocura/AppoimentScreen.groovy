@@ -42,7 +42,7 @@ public class AppoimentScreen extends BaseHelpers{
 		lblVisitDate = createObjectByXpath("lblVisitDate", "//input[@id='txt_visit_date']")
 		lblComment = createObjectByXpath("lblComment", "//textarea[@id='txt_comment']")
 		btnBookAppointment = createObjectByXpath("btnBookAppointment", "//button[@id='btn-book-appointment']")
-		iconCollapse = createObjectByXpath("iconCollapse", "//button[@id='btn-book-appointment']")
+		iconCollapse = createObjectByXpath("iconCollapse", "//a[@id='menu-toggle']")
 		lblLogout = createObjectByXpath("lblLogout", "//a[text()='Logout']")
 		xpathHealthProgram="//input[@name='programs' and @value='{program}']"
 	}
